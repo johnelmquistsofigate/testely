@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true,update_synch=false,native_recordlock=true" db_object_id="15d8755ca10413107f44f1a57500d202" label="Process Generation Context" max_length="40" name="sys_pd_generation_context" read_only="true" read_only_option="strict_read_only" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Request ID" max_length="100" name="request_id" read_only="true" read_only_option="strict_read_only" type="string"/>
+        <element choice="1" default="NEW" label="State" max_length="40" name="state" read_only="true" read_only_option="strict_read_only" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="10" value="NEW"/>
+                <element inactive_on_update="false" label="Error" sequence="40" value="ERROR"/>
+                <element inactive_on_update="false" label="In Progress" sequence="20" value="IN_PROGRESS"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="50" value="CANCELLED"/>
+                <element inactive_on_update="false" label="Complete" sequence="30" value="COMPLETE"/>
+                <element inactive_on_update="false" label="Persisted" sequence="35" value="PERSISTED"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Error message" max_length="250" name="error_message" read_only="true" read_only_option="strict_read_only" type="string"/>
+        <element attributes="json_view=true" label="ProcessData JSON" max_length="1000" name="process_data" read_only="true" read_only_option="strict_read_only" type="json"/>
+        <element attributes="json_view=true" label="Meta" max_length="1000" name="meta" read_only="true" read_only_option="strict_read_only" type="json"/>
+        <element attributes="json_view=true" label="Additional Process Info" max_length="1000" name="additional_process_info" read_only="true" read_only_option="strict_read_only" type="json"/>
+        <element attributes="encode_utf8=false" label="Process Definition" max_length="32" name="process_definition" read_only="true" read_only_option="strict_read_only" reference="sys_pd_process_definition" type="reference"/>
+        <element label="State Updated Callback" max_length="200" name="state_updated_callback" read_only="true" read_only_option="strict_read_only" type="script"/>
+        <element label="Error Callback" max_length="200" name="error_callback" read_only="true" read_only_option="strict_read_only" type="script"/>
+        <element attributes="edge_encryption_enabled=true" label="Context Lock Owner" max_length="100" name="sys_lock_owner" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Context Lock Acquired" max_length="40" name="sys_lock_acquired" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Context Lock Touched" max_length="40" name="sys_lock_touched" type="glide_date_time"/>
+        <index name="index">
+            <element name="request_id"/>
+        </index>
+        <index name="index2">
+            <element name="process_definition"/>
+        </index>
+    </element>
+</database>

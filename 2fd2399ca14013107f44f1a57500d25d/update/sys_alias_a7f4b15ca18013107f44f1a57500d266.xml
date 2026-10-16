@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="INSERT_OR_UPDATE">
+        <configuration_template/>
+        <connection_type>http_connection</connection_type>
+        <description/>
+        <id>x_cdltd_testy.github</id>
+        <is_internal>false</is_internal>
+        <multiple_connections>false</multiple_connections>
+        <name>github</name>
+        <parent/>
+        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-16 12:33:16</sys_created_on>
+        <sys_id>a7f4b15ca18013107f44f1a57500d266</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_cdltd_testy.github</sys_name>
+        <sys_package display_value="Testy" source="x_cdltd_testy">2fd2399ca14013107f44f1a57500d25d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testy">2fd2399ca14013107f44f1a57500d25d</sys_scope>
+        <sys_update_name>sys_alias_a7f4b15ca18013107f44f1a57500d266</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-16 12:33:16</sys_updated_on>
+        <type>connection</type>
+    </sys_alias>
+    <sys_translated_text action="delete_multiple" query="documentkey=a7f4b15ca18013107f44f1a57500d266"/>
+</record_update>

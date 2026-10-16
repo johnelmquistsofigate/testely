@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="INSERT_OR_UPDATE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>sys_pd_generation_context</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-16 12:49:54</sys_created_on>
+        <sys_id>ced8755ca10413107f44f1a57500d2f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_pd_generation_context</sys_name>
+        <sys_package display_value="Testy" source="x_cdltd_testy">2fd2399ca14013107f44f1a57500d25d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testy">2fd2399ca14013107f44f1a57500d25d</sys_scope>
+        <sys_update_name>ua_table_licensing_config_ced8755ca10413107f44f1a57500d2f6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-16 12:49:54</sys_updated_on>
+    </ua_table_licensing_config>
+</record_update>
